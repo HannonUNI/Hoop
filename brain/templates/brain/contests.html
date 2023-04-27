@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+  <head>
+    {% block head %}
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contest</title>
+      <link rel="stylesheet" href="{% static 'contests.css' %}">
+
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}
+      <div class="content">
+        {% if contest %}
+          <h1> {{contest.id}} </h1>
+          <h1>{{ contest.name }}</h1>
+          <h2> {{contest.auther}} </h2>
+          <p>{{ contest.description }}</p>
+          <h3>{{ contest.status }}</h3>
+          <h2>{{ contest.start_time }}</h2>
+        {% else %}
+        <table border="0">
+          <tr>
+            <td>
+              <div id="contest-box">
+                <a href="1">
+                  <h1 class="title">Contest name</h1>
+                  <p class="description">contest discripti ondiscrip tiond iscripti ondis cription</p>
+                  <h4 class="date">21/9/2022 19:00</h4>
+                  <h4 class="status">Contest status</h4>
+                </a>
+              </div>
+            </td>
+            <td>
+              <div id="contest-box">
+                <h1 class="title">Contest name</h1>
+                <p class="description">contest discripti ondiscrip tiond iscripti ondis cription</p>
+                <h4 class="date">21/9/2022 19:00</h4>
+                <h4 class="status">Contest status</h4>
+              </div>
+            </td>
+            <td>
+              <div id="contest-box">
+                <h1 class="title">Contest name</h1>
+                <p class="description">contest discripti ondiscrip tiond iscripti ondis cription</p>
+                <h4 class="date">21/9/2022 19:00</h4>
+                <h4 class="status">Contest status</h4>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="contest-box">
+                <h1 class="title">Contest name</h1>
+                <p class="description">contest discripti ondiscrip tiond iscripti ondis cription</p>
+                <h4 class="date">21/9/2022 19:00</h4>
+                <h4 class="status">Contest status</h4>
+              </div>
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,35 @@
+
+      .content {
+        margin: auto;
+        box-shadow: 0 12px 11px rgb(91 184 255 / 38%), 0 100px 80px rgb(91 184 255 / 43%);
+        
+      }
+      
+      table{
+        position: relative;
+        margin: 100px;
+        border-collapse: collapse;
+        
+      }
+      td{
+        padding: 40px;
+      }
+      td:hover{
+        background-color: #00000010;
+        transition: 0.3s ease-in-out;
+      }
+      td .all-img{
+        height: 40%;
+        width: 40%;
+        display: inline;
+      }
+
+      td .winners-image{
+        height: 40%;
+        width: 40%;
+        display: inline;
+      }
+      #bg{
+        position: static;
+        width: 100%;
+      }

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+  <head>
+    {% block head %}
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home Page</title>
+      <link rel="stylesheet" href="{% static 'home.css' %}">
+    {% endblock head %}
+  </head>
+  <body>
+    {% block content %}
+    <div class="content">
+      <table border="0">
+            <tr>
+              <td colspan="2">
+                <h1>Latest</h1>
+                <h2>hour of object v3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ipsum nihil ea vero consequuntur! ...</p>
+                <img src="{% static 'img/hoo.jpg' %}" class="all-img">
+                <img src="{% static 'img/hop 1 winners.jpg' %}" class="winners-image">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>hour of object v1</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ipsum nihil ea vero consequuntur! ...</p>
+                <img src="{% static 'img/hoo.jpg' %}" class="all-img">
+              </td>
+              <td>
+                <h1>hour of object v2</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ipsum nihil ea vero consequuntur! ...</p>
+                <img src="{% static 'img/hoo.jpg' %}" class="all-img">
+              </td>
+            </tr>
+            {% comment %} {{ request.user }} {% endcomment %}
+          </table>
+        </div>
+    </body>
+    </html>
+    {% endblock %}

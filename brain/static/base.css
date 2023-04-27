@@ -1,0 +1,19 @@
+#all {
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 50px;
+}
+
+#l1 {
+    position: absolute;
+    bottom: 0;
+}
+
+#l2 {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}

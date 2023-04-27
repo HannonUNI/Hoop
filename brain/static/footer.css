@@ -1,0 +1,32 @@
+.footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(to top, rgb(109 195 255/ 80%) 0%, rgb(109 195 255 / 0%)100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    text-align: center;
+  }
+  .footer div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    bottom: 20%;
+    font-size: 16px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  .footer img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 100% 0;
+    height: 500px;
+  }

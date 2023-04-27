@@ -1,0 +1,19 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'footer.css' %}">
+    {% block head %}
+    {% endblock head %}
+</head>
+{% include 'navbar.html' %}
+<div id="all">
+<div id="bg">
+    <img id="l1" src="{% static 'img/bg-layer-1.svg' %}">
+    <img id="l2" src="{% static 'img/bg-layer-2.svg' %}">
+</div>
+  {% block content %}
+
+  {% endblock %}
+</div>
+{% include 'footer.html' %}

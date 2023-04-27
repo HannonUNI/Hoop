@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="wrapper">
+    <ul id="navbar">
+        <li class="left">
+            <a href="{% url 'index'%}">Home</a>
+        </li>
+        <li class="right">
+            <a href="{% url 'account'%}">Account Managment</a>
+        </li>
+        <li class="right">
+            <a href="{% url 'contests' %}">Contests</a>
+        </li>
+    </ul>
+</div>
+<script src="{% static 'navbar.js' %}"></script>

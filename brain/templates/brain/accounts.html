@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href={% static 'accounts.css' %}>
+    </head>
+    {% comment %} {% include 'navbar.html' %} {% endcomment %}
+
+    <div id="container">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true" />
+            <div class="signup">
+                <form method="post" action="{% url 'register' %}">
+                    {% csrf_token %}          
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="username" placeholder="User name" />
+                    {% comment %} <input type="email" name="email" placeholder="emial" /> {% endcomment %}
+                    <input type="password" name="password1" placeholder="Password"/>
+                    <input type="password" name="password2" placeholder="Password"/>
+                    <button type="submit" name="submit" value="register">regester</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" name="username" placeholder="username" />
+                <input type="password" name="password" placeholder="Password"/>
+                <button type="submit" name="submit" value="login">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</html>
