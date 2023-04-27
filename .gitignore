@@ -5,6 +5,7 @@
 __pycache__
 db.sqlite3
 media
+/hourOfObject/sk.py
 
 # Backup files # 
 *.bak 
